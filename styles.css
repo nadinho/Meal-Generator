@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  font-family: "Spartan";
+}
+
+body::after {
+  content: "";
+  background-image: url(https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1531&q=80);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.title {
+  font-size: 40px;
+}
+
+.text {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.btn__link {
+  text-decoration: none;
+
+  color: black;
+  font-family: "Spartan";
+  font-weight: 900;
+}
+
+.btn__link:hover {
+  text-decoration: underline;
+}
+
+.btn__grad {
+  position: relative;
+  background-color: transparent;
+  height: 80px;
+  width: 200px;
+  padding: 1em 1.5em;
+  margin: 1em 0.8em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn__grad::after,
+.btn__grad::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 5px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+}
+
+.btn__grad::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #781714;
+  border-right-color: #eb4135;
+}
+
+.btn__grad::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #fead6a;
+  border-left-color: #fef695;
+}
+
+.btn__grad:hover:after,
+.btn__grad:hover:before {
+  width: 100%;
+  height: 100%;
+}
