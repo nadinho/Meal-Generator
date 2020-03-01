@@ -1,0 +1,25 @@
+{
+  "name": "meal-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nadinho/Meal-Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nadinho/Meal-Generator/issues"
+  },
+  "homepage": "https://github.com/nadinho/Meal-Generator#readme",
+  "dependencies": {
+    "csslint": "^1.0.5",
+    "eslint": "^6.8.0",
+    "htmlhint": "^0.11.0",
+    "prettier": "^1.19.1"
+  }
+}
